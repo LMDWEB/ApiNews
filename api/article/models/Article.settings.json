@@ -1,0 +1,75 @@
+{
+  "connection": "default",
+  "collectionName": "articles",
+  "info": {
+    "name": "article",
+    "description": "Table Article"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "title_seo": {
+      "type": "string"
+    },
+    "resume": {
+      "type": "text"
+    },
+    "resume_seo": {
+      "type": "text"
+    },
+    "status": {
+      "type": "string"
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "date": {
+      "type": "date"
+    },
+    "content": {
+      "type": "text"
+    },
+    "type": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "players": {
+      "type": "json"
+    },
+    "clubs": {
+      "type": "json"
+    },
+    "matches": {
+      "type": "json"
+    },
+    "user": {
+      "model": "user",
+      "via": "articles",
+      "plugin": "users-permissions"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "category": {
+      "model": "category",
+      "via": "articles"
+    },
+    "website": {
+      "model": "website",
+      "via": "articles"
+    }
+  }
+}

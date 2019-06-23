@@ -1,0 +1,34 @@
+{
+  "connection": "default",
+  "collectionName": "categories",
+  "info": {
+    "name": "category",
+    "description": "Toutes les categories"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "articles": {
+      "collection": "article",
+      "via": "category"
+    },
+    "website": {
+      "model": "website",
+      "via": "categories"
+    }
+  }
+}
