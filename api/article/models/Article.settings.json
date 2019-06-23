@@ -70,6 +70,21 @@
     "website": {
       "model": "website",
       "via": "articles"
+    },
+    "views": {
+      "type": "integer"
+    },
+    "comments": {
+      "collection": "comment",
+      "via": "article"
+    },
+    "thread": {
+      "model": "article",
+      "via": "articles"
+    },
+    "articles": {
+      "collection": "article",
+      "via": "thread"
     }
   }
 }
