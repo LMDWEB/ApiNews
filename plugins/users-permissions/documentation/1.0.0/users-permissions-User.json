@@ -1243,6 +1243,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "slug": {
+                  "type": "string"
                 }
               }
             }

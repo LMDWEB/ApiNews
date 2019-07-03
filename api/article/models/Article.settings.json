@@ -85,6 +85,9 @@
     "articles": {
       "collection": "article",
       "via": "thread"
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }

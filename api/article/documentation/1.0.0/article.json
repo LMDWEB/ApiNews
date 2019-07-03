@@ -863,6 +863,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "slug": {
+                "type": "string"
               }
             }
           },
@@ -947,9 +950,15 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "slug": {
+                  "type": "string"
                 }
               }
             }
+          },
+          "slug": {
+            "type": "string"
           }
         }
       },
@@ -1023,6 +1032,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "slug": {
+            "type": "string"
           }
         }
       }
